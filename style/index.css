@@ -163,3 +163,21 @@ h4 {
 .row2 img {
     height: 40vh;
 }
+
+footer {
+    background-color: #006D77;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: -10%;
+}
+
+footer button {
+    position: absolute;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 3%;
+    padding: 2% 6%;
+    border-radius: 5%;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 1.8rem;
+}
