@@ -50,23 +50,40 @@ nav {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    background-color: #FFDDD2;
+    padding: 3% 0 2%;
+    margin-top: -2%;
 }
 
 .links {
     width: 30%;
+    font-family: 'Baloo Chettan 2', cursive;
 }
 
 nav h2 {
     width: 70%;
-    font-size: 4rem;
+    font-size: 4.5rem;
+    color: #006D77;
     margin-top: -1.2%;
     padding-left: 1%;
+    font-family: 'Carter One', cursive;
 }
 
 .home, .about, .contact, .projects {
     background-color: #E29578;
-    padding: 5%;
+    color: #006D77;
+    padding: 4%;
     text-align: center;
-    margin-top: 3%;
+    margin: 3% 2.1% 0;
     border-radius: 25%;
+}
+
+@keyframes navlinks {
+    0% {background-color: #E29578;}
+    50% {background-color: #FF571F;}
+}
+
+a:hover {
+    animation-name: navlinks;
+    animation-duration: 4s;
 }
