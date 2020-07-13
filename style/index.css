@@ -102,6 +102,8 @@ a:hover {
 .container img {
     height: 90vh;
     margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
 }
 
 .banner {
@@ -113,15 +115,16 @@ a:hover {
     font-family: 'Carter One', cursive;
 }
 
-.banner button {
+.banner a {
     position: absolute;
     text-align: center;
     margin-left: 22%;
-    padding: 3% 15%;
+    padding: 3% 20%;
     font-size: 2rem;
     border-radius: 5%;
     font-family: 'Baloo Chettan 2', cursive;
     font-size: 1.8rem;
+    border: 1px solid gray;
 }
 
 .row {
@@ -132,13 +135,13 @@ a:hover {
 }  
 
 .row div {
-    width: 30%;
+    width: 33%;
     padding: 5%;
     text-align: center;
 }
 
 .row img {
-    height: 40vh;
+    height: 25vh;
     width: 100%;
 }
 
@@ -174,9 +177,9 @@ h4 {
 
 footer {
     background-color: #006D77;
-    height: 30vh;
+    height: 20vh;
     width: 100%;
-    margin-bottom: -5%;;
+    /* margin-bottom: -5%; */
 }
 
 footer button {
@@ -217,20 +220,81 @@ footer button {
         left: 20%;
     }
 
+    .banner a {
+        font-size: 2rem;
+        margin-left: 30%;
+        padding: 2% 6%;
+    }
+
     .container img {
         width: 80%;
         height: 90vh;
+        left: 5%;
     }
 
     .row div {
         width: 50%;
     }
 
+    .row img {
+        height: 50vh;
+    }
+
     .row {
         justify-content: space-around;
     }
 
+    footer {
+        margin-bottom: -5%;
+    }
+
     footer button {
-        margin-top: 4%;
+        margin-top: 1%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav h2 {
+        margin-left: 20%;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+    .home, .about, .contact, .projects {
+        width: 40%;
+        border-radius: 0%;
+        margin: 0.5% auto;
+    }
+
+    .banner {
+        font-size: 6rem;
+        top: 90%;
+        left: 12%;
+    }
+
+    .container img {
+        width: 90%;
+        margin: 4% 3% 4% 0;
+        height: 80vh;
+        padding-bottom: 4%;;
+    }
+
+    .banner a {
+        font-size: 2rem;
+    }
+
+    .row h4 {
+        font-size: 2rem;;
+    }
+
+    .row img {
+        height: 30vh;
+    }
+
+    footer button {
+        margin-left: 32%;
     }
 }
