@@ -118,6 +118,8 @@ nav h2 {
 .banner a {
     position: absolute;
     text-align: center;
+    text-decoration: none;
+    color: #006D77;
     margin-left: 22%;
     padding: 3% 20%;
     font-size: 2rem;
